@@ -17,8 +17,8 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
   return (
     <React.Fragment>
       <aside className={`sidebar ${isOpen ? "show-sidebar" : ""}`}>
-        <div className="sidebar-close-btn" onClick={toggleSidebar}>
-          <AiOutlineClose></AiOutlineClose>
+        <div className="sidebar-close-btn">
+          <AiOutlineClose onClick={toggleSidebar}></AiOutlineClose>
         </div>
         <ul className="sidebar-links">
           <li>

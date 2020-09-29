@@ -9,8 +9,8 @@ const Navbar = ({ toggleSidebar }) => {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-logo">Tomas Padilla</div>
-        <div className="menu-sidebar-open-btn" onClick={toggleSidebar}>
-          <AiOutlineMenu></AiOutlineMenu>
+        <div className="menu-sidebar-open-btn">
+          <AiOutlineMenu onClick={toggleSidebar}></AiOutlineMenu>
         </div>
         {/* Navbar Desktop */}
         <ul className="navbar-links">
